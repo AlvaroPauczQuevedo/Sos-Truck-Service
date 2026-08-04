@@ -1,0 +1,13 @@
+{
+  "name": "SOS Truck Service — Socorro Mecânico 24h",
+  "short_name": "SOS Truck",
+  "description": "Socorro mecânico para caminhões 24 horas. Oficina móvel e mecânica diesel pesada.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0C0D10",
+  "theme_color": "#0C0D10",
+  "icons": [
+    { "src": "assets/favicon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
