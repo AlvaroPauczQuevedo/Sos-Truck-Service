@@ -73,9 +73,14 @@
   if (lightbox) {
     var lbTitle = lightbox.querySelector("[data-lb-title]");
     var lbTag = lightbox.querySelector("[data-lb-tag]");
+    var lbImg = lightbox.querySelector("[data-lb-img]");
     function openLightbox(item){
       lbTitle.textContent = item.getAttribute("data-title") || "";
       lbTag.textContent = item.getAttribute("data-cat-label") || "";
+      if (lbImg) {
+        lbImg.src = item.getAttribute("data-img") || "";
+        lbImg.alt = item.getAttribute("data-title") || "";
+      }
       lightbox.classList.add("open");
       document.body.style.overflow = "hidden";
     }
