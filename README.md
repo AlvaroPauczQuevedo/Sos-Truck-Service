@@ -51,7 +51,7 @@ sos-truck-service/
 ├── README.md                  ← Este documento
 └── assets/
     ├── logo-sos-truck-service.png   ← Logo em círculo, fundo transparente (223×223)
-    ├── og-image.png                 ← Imagem exibida ao compartilhar o link (1200×630)
+    ├── og-image.jpg                 ← Imagem exibida ao compartilhar o link (1200×630)
     ├── favicon.ico                  ← Ícone da aba do navegador
     ├── favicon-32.png               ← Ícone 32×32
     ├── favicon-192.png              ← Ícone Android

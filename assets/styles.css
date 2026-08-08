@@ -564,6 +564,8 @@ footer{background:#0A0B0D;border-top:1px solid var(--line)}
   width:46px;height:46px;border-radius:11px;flex:none;display:grid;place-items:center;
   background:rgba(238,17,25,.11);color:var(--red);border:1px solid rgba(238,17,25,.22);
 }
+.job-photos{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px}
+.job-photos img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r-md);border:1px solid var(--line);display:block}
 .dual-card strong{display:block;font-size:.92rem;font-weight:800;text-transform:uppercase;letter-spacing:.02em}
 .dual-card small{font-size:.78rem;color:var(--smoke);font-weight:600}
 
@@ -633,12 +635,7 @@ footer{background:#0A0B0D;border-top:1px solid var(--line)}
   display:block;transition:transform .28s cubic-bezier(.22,1,.36,1),border-color .28s ease,box-shadow .28s ease;
 }
 .reel-card:hover{transform:translateY(-6px);border-color:rgba(238,17,25,.5);box-shadow:0 20px 44px rgba(0,0,0,.5)}
-.reel-card::before{
-  content:"";position:absolute;inset:0;
-  background:
-    radial-gradient(circle at 50% 40%,rgba(238,17,25,.14),transparent 55%),
-    repeating-linear-gradient(-45deg,rgba(255,255,255,.03) 0 10px,transparent 10px 20px);
-}
+.reel-cover{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .reel-play{
   position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
   width:56px;height:56px;border-radius:50%;display:grid;place-items:center;
@@ -647,23 +644,19 @@ footer{background:#0A0B0D;border-top:1px solid var(--line)}
 }
 .reel-card:hover .reel-play{transform:translate(-50%,-50%) scale(1.12);background:var(--red);border-color:var(--red)}
 .reel-badge{
-  position:absolute;top:12px;left:12px;display:inline-flex;align-items:center;gap:6px;
-  background:rgba(12,13,16,.8);border:1px solid var(--line-strong);border-radius:8px;padding:5px 9px;
-  font-size:.64rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--red);
+  position:absolute;top:12px;left:12px;display:inline-flex;align-items:center;gap:7px;
+  background:rgba(12,13,16,.8);border:1px solid var(--line-strong);border-radius:10px;padding:6px 12px 6px 8px;
+  font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--red);
 }
-.reel-cap{
-  position:absolute;left:0;right:0;bottom:0;padding:14px 14px 16px;
-  background:linear-gradient(0deg,rgba(6,7,9,.92),transparent);
-}
-.reel-cap strong{display:block;font-size:.84rem;font-weight:800;line-height:1.25}
-.reel-cap small{font-size:.7rem;color:var(--smoke);font-weight:600}
+.reel-badge svg{stroke-width:2.4;flex:none}
 .ig-cta{
   margin-top:clamp(34px,4vw,48px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;
   border:1px solid var(--line);border-radius:var(--r-lg);padding:26px 28px;
   background:linear-gradient(90deg,#15181D,#111318);
 }
 .ig-cta-info{display:flex;align-items:center;gap:16px}
-.ig-cta-info .mc-icon{width:52px;height:52px;border-radius:13px;background:rgba(238,17,25,.12);border:1px solid rgba(238,17,25,.24);color:var(--red)}
+.ig-cta-info .mc-icon{width:52px;height:52px;border-radius:13px;flex:none;display:grid;place-items:center;background:rgba(238,17,25,.12);border:1px solid rgba(238,17,25,.24);color:var(--red)}
+.ig-cta-info .mc-icon svg{stroke-width:2.2}
 .ig-cta-info strong{display:block;font-size:1rem;font-weight:800;text-transform:uppercase}
 .ig-cta-info span{color:var(--smoke);font-size:.86rem}
 
@@ -715,6 +708,7 @@ footer{background:#0A0B0D;border-top:1px solid var(--line)}
   .reviews-grid{grid-template-columns:repeat(2,1fr)}
   .foot-grid{grid-template-columns:1fr 1fr}
   .dual-strip{grid-template-columns:1fr}
+  .job-photos{grid-template-columns:repeat(2,1fr)}
   .gal-grid{grid-template-columns:repeat(3,1fr)}
   .gal-item.gal-wide{grid-column:span 3}
   .reels-grid{grid-template-columns:repeat(3,1fr)}
@@ -752,6 +746,7 @@ footer{background:#0A0B0D;border-top:1px solid var(--line)}
   .team-grid{grid-template-columns:1fr}
   .form-row{grid-template-columns:1fr}
   .ig-cta{flex-direction:column;align-items:flex-start}
+  .job-form-wrap .btn{width:100%}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
