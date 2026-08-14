@@ -97,7 +97,7 @@ Basta editar o texto entre aspas.
 
 ### 3.3. Endereço, horário e área de atendimento
 
-Procure por `Rua Ana Catharina Canali` — o endereço aparece no rodapé, no link do mapa e nos
+Procure por `Rua Amábile Telli` — o endereço aparece no rodapé, no link do mapa e nos
 dados estruturados do Google. Altere nos três pontos.
 
 Para mudar a área de cobertura, procure por `RS e SC` e `RIO GRANDE DO SUL · SANTA CATARINA`.
@@ -201,8 +201,8 @@ assistência para caminhões, oficina móvel diesel.
 
 ### Antes de publicar, faça estes 3 ajustes
 
-1. **Domínio.** Procure por `www.sostruckservice.com.br` (aparece 8 vezes) e troque pelo
-   domínio real, em `index.html` e em `sitemap.xml`.
+1. **Domínio.** Já configurado com o domínio real `sostruckbr.com` em `index.html`,
+   `galeria.html`, `reels.html`, `trabalhe-conosco.html`, `sitemap.xml` e `robots.txt`.
 2. **Google Meu Negócio.** Cadastre ou reivindique o perfil da empresa e coloque o endereço
    do site lá. Isso vale mais para busca local do que qualquer outro ajuste.
 3. **Google Search Console.** Cadastre o site em
