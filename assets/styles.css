@@ -753,3 +753,11 @@ footer{background:#0A0B0D;border-top:1px solid var(--line)}
   .reveal{opacity:1;transform:none}
   html{scroll-behavior:auto}
 }
+
+/* ============ PRODUTOS ============ */
+.p-card{padding:0}
+.p-card h3,.p-card p,.p-card .link-wa{margin-left:20px;margin-right:20px}
+.p-card .link-wa{margin-bottom:20px}
+.p-img{aspect-ratio:16/10;overflow:hidden;border-bottom:1px solid var(--line)}
+.p-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+.p-card:hover .p-img img{transform:scale(1.05)}
